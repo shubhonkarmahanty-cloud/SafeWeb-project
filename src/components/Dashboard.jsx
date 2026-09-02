@@ -57,7 +57,7 @@ const Dashboard = () => {
         </div>
         <div className='shadow-[2px_2px_40px_10px_black] text-[20px] p-5 h-[40vh] w-full overflow-auto bg-gray-800 text-white'>
           <div className=' flex items-center justify-center m-5'>
-              <h2 className='text-2xl text-center font-bold mb-5 fixed text-red-500'>Blocked Websites are ...</h2>
+              <h2 className='text-2xl text-center font-bold text-red-500'>Blocked Websites are ...</h2>
             </div> 
           <div className='ml-8'>
             {list.map((e,idx)=>{
@@ -66,7 +66,7 @@ const Dashboard = () => {
                 onClick={()=>{
                   remove(idx)
                 }}
-                 className='font-bold text-red-500 text-2xl -ml-12 fixed bg-white rounded-[10px] px-2 pb-1'>x</button>
+                 className='font-bold text-red-500 sticky left-0 text-2xl -ml-12  bg-white rounded-[10px] px-2 pb-1'>x</button>
                 <li className='ml-5'>{e.url}</li>
               </div>
               
